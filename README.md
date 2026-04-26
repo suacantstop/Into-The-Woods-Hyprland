@@ -1,7 +1,7 @@
 # 🌲 Into the Woods // NixOS Contest Edition
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ваше_имя/репозиторий/main/screenshots/main.jpg" width="100%" alt="Forest Rice Preview">
+  <img src="https://github.com/suacantstop/Into-The-Woods-Hyprland/blob/main/screenshots/2026-04-26-201359_hyprshot.png" width="100%" alt="Forest Rice Preview">
   <br />
   <p align="center">
     <img src="https://img.shields.io/badge/NixOS-unstable-blue?logo=nixos&logoColor=white&style=for-the-badge" />
