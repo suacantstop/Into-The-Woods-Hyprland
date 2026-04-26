@@ -7,7 +7,8 @@
 </div>
 
 <div align="center">
-  <img src="https://github.com/suacantstop/Into-The-Woods-Hyprland/blob/main/screenshots/2026-04-26-201359_hyprshot.png" width="100%" alt="Forest Rice Preview">
+  <img src="https://github.com/suacantstop/Into-The-Woods-Hyprland/blob/main/screenshots/2026-04-26-201359_hyprshot.png" width="100%">
+  <img src="https://github.com/suacantstop/Into-The-Woods-Hyprland/blob/main/screenshots/2026-04-26-201437_hyprshot.png" width="100%" alt="Preview">
   <br /> 
 </div>
   
