@@ -5,11 +5,12 @@
     <img src="https://img.shields.io/badge/Theme-Gruvbox_Forest-orange?style=for-the-badge" />
   </p>
 </div>
-<div align="center">
-  
-  <img src="ht
-    ps://github.com/suacantstop/Into-The-Woods-Hyprland/blob/main/screenshots/2026-04-26-201359_hyprshot.png" width="100%" alt="Forest Rice Preview">
 
+<div align="center">
+  <img src="https://github.com/suacantstop/Into-The-Woods-Hyprland/blob/main/screenshots/2026-04-26-201359_hyprshot.png" width="100%" alt="Forest Rice Preview">
+  <br /> 
+</div>
+  
 ---
 
 ## 🍃 О проекте
