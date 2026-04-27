@@ -14,24 +14,9 @@ in {
         margin-right = 12;
         spacing = 0;
 
-        modules-left = [
-          "hyprland/workspaces"
-          "hyprland/language"
-        ];
-        modules-center = [
-          "clock"
-        ];
-        modules-right = [
-          "network"
-          "pulseaudio"
-          "cpu"
-          "memory"
-          "temperature"
-          "disk"
-          "battery"
-          "tray"
-          "custom/power"
-        ];
+        modules-left = [ "hyprland/workspaces" "hyprland/language" ];
+        modules-center = [ "clock" ];
+        modules-right = [ "network" "pulseaudio" "cpu" "memory" "temperature" "disk" "battery" "tray" "custom/power" ];
 
         "hyprland/workspaces" = {
           format = "{icon}";
@@ -46,28 +31,22 @@ in {
 
         "hyprland/language" = {
           format = "󰗊 {short}";
-          format-en = "US";
-          format-ru = "RU";
         };
 
         clock = {
           format = "󰃭  {:%H:%M}";
-          format-alt = "󰃭  {:%A, %d %B}";
           tooltip-format = "<tt>{calendar}</tt>";
         };
 
         pulseaudio = {
           format = "{icon} {volume}%";
           format-muted = "󰝟";
-          format-icons = {
-            default = [ "󰕿" "󰖀" "󰕾" ];
-          };
+          format-icons = { default = [ "󰕿" "󰖀" "󰕾" ]; };
           on-click = "pavucontrol";
         };
 
         network = {
           format-wifi = "󰤨 {signalStrength}%";
-          format-ethernet = "󰈀";
           format-disconnected = "󰤮";
         };
 
@@ -99,8 +78,9 @@ in {
       }
 
       window#waybar {
-        background: rgba(15, 17, 26, 0.2);
-        border-radius: 16px;
+        background: rgba(15, 17, 26, 0.4);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
       }
 
       #workspaces,
@@ -115,18 +95,21 @@ in {
       #battery,
       #tray,
       #custom-power {
-        background-color: rgba(20, 24, 35, 0.75);
+        background-color: rgba(20, 24, 35, 0.85);
         color: #${c.fg0};
-        border-radius: 12px;
+        border-radius: 14px;
         padding: 0 12px;
-        margin: 4px 3px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 5px 4px;
         border: 1px solid rgba(255, 255, 255, 0.05);
       }
 
+      /* Увеличиваем отступы у крайних элементов, чтобы они не наплывали на углы панели */
+      .modules-left > widget:first-child > #workspaces { margin-left: 10px; }
+      .modules-right > widget:last-child > #custom-power { margin-right: 10px; }
+
       #workspaces button {
         color: #${c.bg3};
-        padding: 0 4px;
+        padding: 0 6px;
       }
 
       #workspaces button.active {
@@ -134,11 +117,7 @@ in {
         text-shadow: 0 0 5px rgba(166, 227, 161, 0.5);
       }
 
-      #clock {
-        color: #${c.accentPeach};
-        font-weight: bold;
-      }
-
+      #clock { color: #${c.accentPeach}; font-weight: bold; }
       #pulseaudio { color: #${c.accentBlue}; }
       #network { color: #${c.accentCyan}; }
       #cpu { color: #${c.accentBlue}; }
@@ -146,10 +125,7 @@ in {
       #temperature { color: #${c.accentPeach}; }
       #disk { color: #${c.fg1}; }
       #battery { color: #${c.accentGreen}; }
-
-      #custom-power {
-        color: #${c.danger};
-      }
+      #custom-power { color: #${c.danger}; }
     '';
   };
 }
